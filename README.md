@@ -23,3 +23,9 @@ The primary goal was to examine the main effects of latency and complexity, as w
 **Please Note:** The full project materials, including the study platform infrastructure code, anonymized participant data, and data analysis scripts, are currently undergoing necessary cleanup and sanitization to remove sensitive information and ensure compliance with privacy standards before they can be uploaded to this public facing repo.
 
 **The complete project contents will be uploaded to this repository by April 15th.**
+
+---
+
+## Screenshots
+
+*(Screenshots of the study web application interface will be added here soon.)*
