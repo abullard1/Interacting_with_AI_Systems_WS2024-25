@@ -1,0 +1,11 @@
+{
+  "title": "Symptome überprüfen",
+  "description": "Du fühlst dich seit einiger Zeit unwohl und hast wiederkehrende Kopfschmerzen sowie Übelkeit. Du möchtest verstehen, was dahinterstecken könnte.",
+  "task": "Stell eine Suchanfrage wie **\"Was könnten Ursachen für wiederkehrende Kopfschmerzen und Übelkeit sein?\"** und informieren dich über mögliche Gründe.",
+  "question": "Was könnten Ursachen für wiederkehrende Kopfschmerzen und Übelkeit sein?",
+  "welcome_message": "Hallo! Ich bin hier, um deine Fragen zu medizinischen Themen zu beantworten. Wie kann ich dir heute helfen?",
+  "condition": {
+    "latency": "slow",
+    "complexity": "hard"
+  }
+} 

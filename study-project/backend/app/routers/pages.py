@@ -10,12 +10,10 @@ logger = logging.getLogger(__name__)
 router = APIRouter(include_in_schema=False)
 
 def is_valid_study_token(token: str) -> bool:
-    """Validate that a study token is in the correct format (UUID)."""
     if not token:
         logger.warning(f"[Token Validation] Empty token provided")
         return False
     
-    # Check if token is a valid UUID
     try:
         uuid_obj = uuid.UUID(token)
         is_valid = str(uuid_obj) == token
@@ -29,18 +27,14 @@ def is_valid_study_token(token: str) -> bool:
 @router.head("/{path:path}")
 @router.get("/{path:path}")
 async def handle_page(path: str, request: Request):
-    """Serve pages with study token validation and completion checks."""
     logger.info(f"[Pages] Request for path: {path}")
     
-    # Log all cookies for debugging
     logger.info("[Pages] All cookies received:")
     for cookie_name, cookie_value in request.cookies.items():
         logger.info(f"  - {cookie_name}: {cookie_value}")
     
-    # Debug flow control
     logger.info(f"[Pages] Current path: {path}, checking access rules...")
     
-    # Normalize path
     path = path or "index.html"
     
     # Define route type flags
@@ -50,20 +44,16 @@ async def handle_page(path: str, request: Request):
     error_pages = path in ["token-expired", "already-completed"]
     exempt_from_completed_redirect = path in ["finish", "finish.html", "already-completed", "already-completed.html"] or component_templates or static_paths
     
-    # First, check if study is already completed, before serving any content
-    # Only redirect if path is not exempt from redirection
     if request.cookies.get("study-completed") == "true" and not exempt_from_completed_redirect:
         logger.info(f"[Pages] Redirecting completed user from {path} to already-completed")
         return RedirectResponse(url="/already-completed", status_code=302)
     
-    # Generate a consistent study token for a given user session
     study_token = request.cookies.get("study_token")
     
     # For component templates, serve the file without redirections
     if component_templates:
         response = serve_static_file(path)
         if response:
-            # Always keep study_token consistent
             if not study_token:
                 new_token = str(uuid.uuid4())
                 logger.info(f"[Pages] Setting new study token for component template: {new_token}")
@@ -72,16 +62,13 @@ async def handle_page(path: str, request: Request):
         else:
             return RedirectResponse(url="/token-expired", status_code=302)
     
-    # For homepage, serve the file and ensure study_token is set
     if homepage:
         response = serve_static_file(path)
         if response:
-            # If no token exists, create one
             if not study_token:
                 new_token = str(uuid.uuid4())
                 logger.info(f"[Pages] Setting new study token for homepage: {new_token}")
                 set_cookie(response, "study_token", new_token)
-            # If token exists but is invalid, replace it
             elif not is_valid_study_token(study_token):
                 new_token = str(uuid.uuid4())
                 logger.info(f"[Pages] Replacing invalid study token: {study_token} with {new_token}")
@@ -90,7 +77,6 @@ async def handle_page(path: str, request: Request):
         else:
             return RedirectResponse(url="/token-expired", status_code=302)
     
-    # For other static assets and error pages, serve without token check
     if static_paths or error_pages:
         logger.info(f"[Pages] Serving no-auth resource: {path}")
         return serve_static_file(path) or RedirectResponse(url="/token-expired", status_code=302)
@@ -139,6 +125,5 @@ async def handle_page(path: str, request: Request):
         logger.warning(f"[Pages] File not found: {path}")
         return RedirectResponse(url="/", status_code=302)  # Redirect to home if page not found
     
-    # Ensure the token is passed through in the response
     set_cookie(response, "study_token", study_token)
     return response 

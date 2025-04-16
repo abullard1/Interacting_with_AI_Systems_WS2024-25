@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Interaction Study</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/styles/general.css" type="text/css">
+  <link rel="stylesheet" href="/styles/study.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Components -->
+  <script type="module" src="/js/components/NavbarComponent.js"></script>
+  <script type="module" src="/js/components/FooterComponent.js"></script>
+  <script type="module" src="/js/components/ErrorModal.js"></script>
+  <script type="module" src="/js/components/BugReportModal.js"></script>
+</head>
+<body>
+  <!-- Error Modal Component -->
+  <error-modal></error-modal>
+  
+  <!-- Bug Report Modal Component -->
+  <bug-report-modal></bug-report-modal>
+  
+  <navbar-component></navbar-component>
+
+  <div class="main">
+    <div class="container">
+      <div class="bg-light p-md-4 p-2 rounded custom-jumbotron" id="jumbotron">
+        <div class="d-flex justify-content-center align-items-center responsive-gradio-container">
+          <gradio-app
+          src="https://gradio.unistudy.tech"
+          container="false"
+          info="false"
+          eager="true"
+          theme_mode="light"
+          control_page_title="false"
+          allow_flagging="never"
+          autoscroll="false"
+        ></gradio-app>
+        </div>      
+      </div>
+    </div>
+  </div>
+
+  <footer-component progress="40"></footer-component>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js"></script>
+  <script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/5.16.1/gradio.js"
+  ></script>
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Custom Scripts -->
+  <script type="module" src="/js/study.js"></script>
+</body>
+</html>

@@ -81,10 +81,8 @@ async function extractTimingData() {
 
   console.log(`\nFinished processing. Found stage timing data for ${processedUsersCount} users.`);
 
-  // Convert data to CSV and save
   if (allTimingData.length > 0) {
     try {
-      // Define fields for the CSV header
       const fields = ['participant_id', 'stage', 'submit_vs_loading_ms', 'loading_to_response_ms'];
       const opts = { fields };
       const parser = new Parser(opts);

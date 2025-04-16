@@ -118,7 +118,6 @@ def load_feedback_from_json(script_dir):
 
 # --- Fetch Firestore Data --- #
 def fetch_firestore_data(db, participant_ids):
-    """Fetches full Firestore documents for the given participant IDs."""
     print(f"Fetching Firestore data for {len(participant_ids)} participants...")
     users_ref = db.collection('users')
     MAX_IN_QUERY_SIZE = 30
@@ -141,7 +140,6 @@ def fetch_firestore_data(db, participant_ids):
 
 # --- Save Flattened Data --- #
 def save_flattened_csv(data_dict, participant_id, participant_output_dir, section_name, filename, index=False):
-    """Flattens a dictionary using json_normalize and saves it as a CSV."""
     if data_dict:
         try:
             df = pd.json_normalize(data_dict, sep='_')
@@ -159,7 +157,6 @@ def save_flattened_csv(data_dict, participant_id, participant_output_dir, sectio
 
 # --- Process and Save Participant Data --- #
 def process_participant(participant_id, firestore_data, feedback_ratings, output_dir):
-    """Processes a single participant's data and saves the CSV files."""
     participant_output_dir = os.path.join(output_dir, participant_id)
     os.makedirs(participant_output_dir, exist_ok=True)
 

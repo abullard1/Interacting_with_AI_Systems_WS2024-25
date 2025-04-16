@@ -1,0 +1,42 @@
+.study-explanation-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.custom-jumbotron .d-flex.align-items-center {
+  margin: 2rem 0;
+}
+
+.border-secondary-subtle {
+  opacity: 0.6;
+}
+
+
+#token-display {
+  font-weight: 600;
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+@media (max-width: 768px) {
+  .btn-primary {
+    width: 100%;
+  }
+  
+  
+  .custom-jumbotron .d-flex.align-items-center .px-3 {
+    font-size: 0.9rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+} 

@@ -1,0 +1,13 @@
+.alert-success {
+  transition: opacity 0.3s ease;
+}
+
+#matrikelnummer:disabled {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    padding: 0 15px;
+  }
+} 

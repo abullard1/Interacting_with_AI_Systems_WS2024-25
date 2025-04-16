@@ -1,0 +1,4 @@
+participant_id,deviceType,completed,digitalConfidence,timestamp,aiTrust_generalTrust,aiTrust_accuracy,aiTrust_comparedToHumans,aiExperience_healthUsageDetails,aiExperience_frequency,aiExperience_healthUsage,demographics_age,demographics_gender,demographics_nativeLanguage,demographics_education,healthLiteracy_onlineSearchFrequency,healthLiteracy_trustSources,healthLiteracy_understandingAbility,expectations_acceptSlower,expectations_openExpectations,expectations_speedImportance,expectations_responsePreferences
+42090104-6978-4416-91ab-c30d20119186,laptop,True,6,2025-04-02 14:16:29.687000+00:00,5,5,human_more_trustworthy,"Hilfe bei Medikamentenauswahl bei z.B. Erkältung
+Ratschläge zur schnelleren Genesung und Prävention
+Ursachen bei Schmerzen herausfinden",very_often,occasionally,26,male,german,highschool,rarely,"['doctors', 'health_organizations', 'ai_tools', 'family_friends', 'medical_journals']",4,5,,3,"['brief', 'simple_language', 'scientific_evidence']"

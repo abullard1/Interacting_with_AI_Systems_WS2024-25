@@ -1,0 +1,11 @@
+# unistudy.tech Deployment Information
+# ===================================
+Application: unistudy.tech
+Deployed: 2025-03-25 19:16:06
+Deployment ID: 20250325_191547
+
+# Environment
+# ===================================
+Node.js: v20.18.3
+npm: 10.8.2
+Python: Python 3.10.12

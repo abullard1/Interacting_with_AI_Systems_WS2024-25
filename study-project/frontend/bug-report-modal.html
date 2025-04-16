@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<div class="modal fade" id="bugReportModal" tabindex="-1" aria-labelledby="bugReportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bugReportModalLabel">Problem melden</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="bugReportForm">
+                    <div class="mb-3">
+                        <label for="bugReportType" class="form-label">Art des Problems</label>
+                        <select class="form-select" id="bugReportType" required>
+                            <option value="" selected disabled>Bitte wählen...</option>
+                            <option value="ui">Benutzeroberfläche</option>
+                            <option value="functionality">Funktionalität</option>
+                            <option value="content">Inhalt</option>
+                            <option value="other">Sonstiges</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bugReportDescription" class="form-label">Beschreibung des Problems</label>
+                        <textarea class="form-control" id="bugReportDescription" rows="4" required maxlength="500"
+                            placeholder="Bitte beschreibe das Problem so genau wie möglich..."></textarea>
+                        <div class="form-text">
+                            Verbleibende Zeichen: <span id="bugReportCharCount">500</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bugReportPage" class="form-label">Seite</label>
+                        <input type="text" class="form-control" id="bugReportPage" readonly>
+                    </div>
+                    <div class="form-check mb-3" id="tokenOptionContainer">
+                        <input class="form-check-input" type="checkbox" id="includeTokenCheck" checked>
+                        <label class="form-check-label" for="includeTokenCheck">
+                            Studien-Token mitschicken (hilft uns bei der Fehlersuche)
+                        </label>
+                    </div>
+                </form>
+                <div class="alert alert-success d-none" id="bugReportSuccess">
+                    Vielen Dank für deine Meldung! Wir werden das Problem untersuchen.
+                </div>
+                <div class="alert alert-danger d-none" id="bugReportError">
+                    Es ist ein Fehler aufgetreten. Bitte versuche es später erneut.
+                </div>
+            </div>
+            <div class="modal-footer" id="bugReportModalFooter">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Abbrechen</button>
+                <button type="button" class="btn btn-primary" id="bugReportSubmitBtn">
+                    <span class="spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+                    <span class="button-text">Absenden</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> 

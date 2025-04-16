@@ -1,0 +1,2 @@
+participant_id,studyStatus,lastActiveAt,gradio_study_completion_timestamp,consentTimestamp,deviceInfo,consentGiven,lastStage,completionTimestamp,studyToken,createdAt,screenResolution
+e54dcf72-08dd-4193-aa0a-5385bbaa429e,completed,2025-03-26 15:40:49.112000+00:00,2025-03-26T15:40:49.383190+00:00,2025-03-26 15:09:10.600000+00:00,Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0,True,finish,2025-03-26 15:40:49.112000+00:00,e54dcf72-08dd-4193-aa0a-5385bbaa429e,2025-03-26 15:08:19.090000+00:00,1920x1080

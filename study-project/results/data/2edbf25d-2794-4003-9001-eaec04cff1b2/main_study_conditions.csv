@@ -1,0 +1,5 @@
+participant_id,condition,last_scenario_stage,gradio_app_finished,number_in_study_order,scenario_title,tokens_per_second,scenario_id,response_delay_seconds,timestamp,accuracy,completeness,usefulness,comprehensibility,trustworthiness,submit_vs_loading_appear_time_difference_stage_3,submit_vs_loading_appear_time_difference_stage_1,submit_vs_loading_appear_time_difference_stage_2,loading_to_response_time_difference_stage_3,loading_to_response_time_difference_stage_1,loading_to_response_time_difference_stage_2
+2edbf25d-2794-4003-9001-eaec04cff1b2,slow_easy,3,True,,,23.149211738888493,scenario2,5.195756473048283,2025-04-10T16:30:19.605753,5,2,5,7,3,152,304,270,1040,1666,6806
+2edbf25d-2794-4003-9001-eaec04cff1b2,fast_easy,3,True,,,19.65083972143531,scenario1,0.8244348945111246,2025-04-10T16:35:21.176263,1,1,1,1,1,152,304,270,1040,1666,6806
+2edbf25d-2794-4003-9001-eaec04cff1b2,slow_hard,3,True,,,23.65543816566267,scenario4,5.77202180743835,2025-04-10T16:39:19.502463,6,7,6,4,6,152,304,270,1040,1666,6806
+2edbf25d-2794-4003-9001-eaec04cff1b2,fast_hard,3,True,,,22.34017412549715,scenario3,0.8884787857987289,2025-04-10T16:26:56.897151,6,5,2,1,6,152,304,270,1040,1666,6806

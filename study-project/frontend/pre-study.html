@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pre-Study Questionnaire - AI Interaction Study</title>
+  <!-- Favicon links -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16.png" />
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/styles/general.css" />
+  <link rel="stylesheet" href="/styles/pre-study.css" />
+  <!-- Components -->
+  <script type="module" src="/js/components/NavbarComponent.js"></script>
+  <script type="module" src="/js/components/FooterComponent.js"></script>
+  <script type="module" src="/js/components/ErrorModal.js"></script>
+  <script type="module" src="/js/components/BugReportModal.js"></script>
+</head>
+<body>
+  <!-- Components -->
+  <error-modal></error-modal>
+  <bug-report-modal></bug-report-modal>
+  <navbar-component></navbar-component>
+
+  <div class="main">
+    <div class="container">
+      <div class="bg-light p-4 rounded shadow-sm custom-jumbotron">
+        <h3 class="display-4 text-center mb-4">Pre-Study Fragebogen</h3>
+        <p class="lead text-center text-muted mb-4">
+          Bitte beantworte die folgenden Fragen, bevor du mit der Studie beginnst.
+        </p>
+
+        <form id="pre-study-form" class="needs-validation" novalidate>
+          <!-- 1. Demographic Section -->
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <fieldset>
+                <legend class="h5">1. Demografische Basisfragen</legend>
+                <p class="text-muted">Diese Angaben helfen uns, die Ergebnisse besser zu verstehen.</p>
+
+                <div class="form-group">
+                  <label for="age" class="form-label">
+                    <span class="question-number">1</span>Alter
+                  </label>
+                  <input type="number" class="form-control" id="age" name="age" placeholder="18-100" min="18" max="100" required />
+                  <div class="invalid-feedback">
+                    Bitte gib ein Alter zwischen 18 und 100 ein.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="gender" class="form-label">
+                    <span class="question-number">2</span>Geschlecht
+                  </label>
+                  <select class="form-select" id="gender" name="gender" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="male">männlich</option>
+                    <option value="female">weiblich</option>
+                    <option value="diverse">divers</option>
+                    <option value="no_answer">keine Angabe</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Bitte wähle eine Option aus.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="education" class="form-label">
+                    <span class="question-number">3</span>Bildungsgrad
+                  </label>
+                  <select class="form-select" id="education" name="education" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="no_degree">Kein Abschluss</option>
+                    <option value="primary">Mittelschulabschluss</option>
+                    <option value="secondary">Mittlere Reife</option>
+                    <option value="vocational">Fachabitur</option>
+                    <option value="highschool">Allgemeines Abitur</option>
+                    <option value="bachelor">Bachelor</option>
+                    <option value="master">Master</option>
+                    <option value="phd">Promotion</option>
+                    <option value="professor">Professur</option>
+                    <option value="other">Sonstiges</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Bitte wähle eine Option aus.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="nativeLanguage" class="form-label">
+                    <span class="question-number">4</span>Muttersprache
+                  </label>
+                  <select class="form-select" id="nativeLanguage" name="nativeLanguage" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="german">Deutsch</option>
+                    <option value="english">Englisch</option>
+                    <option value="french">Französisch</option>
+                    <option value="spanish">Spanisch</option>
+                    <option value="italian">Italienisch</option>
+                    <option value="portuguese">Polnisch</option>
+                    <option value="turkish">Türkisch</option>
+                    <option value="russian">Russisch</option>
+                    <option value="arabic">Arabisch</option>
+                    <option value="other">Andere</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Bitte wähle eine Option aus.
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- 2. Experience with AI -->
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <fieldset>
+                <legend class="h5">2. Erfahrung mit AI-Systemen</legend>
+                <p class="text-muted">
+                  Bitte beantworte die folgenden Fragen zu deinen Erfahrungen mit KI.
+                </p>
+
+                <div class="form-group">
+                  <label for="digitalConfidence" class="form-label">
+                    <span class="question-number">1</span>Stimmst du der folgenden Aussage zu?<br>
+                    <i>Ich fühle mich sicher im Umgang mit digitalen Technologien.</i>
+                  </label>
+                  <div class="row align-items-center gx-2 mb-2">
+                    <div class="col-auto text-center">
+                      <small class="d-block">1</small>
+                      <small class="d-block text-muted">stimme gar nicht zu</small>
+                    </div>
+                    <div class="col">
+                      <input type="range" class="form-range" id="digitalConfidence" name="digitalConfidence" min="1" max="7" value="4" required />
+                    </div>
+                    <div class="col-auto text-center">
+                      <small class="d-block">7</small>
+                      <small class="d-block text-muted">stimme voll zu</small>
+                    </div>
+                    <div class="col-auto">
+                      <span class="value-display">4</span>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle einen Wert.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">
+                    <span class="question-number">2</span>Wie häufig nutzt du KI-gestützte Systeme wie Chatbots (z.B. Support Anfragen), Large Language Models (ChatGPT, Gemini, etc.) oder Sprachassistenten (Siri, Google Assistant, etc.)?
+                  </label>
+                  <div class="radio-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiFrequency" id="aiFrequency1" value="never" required />
+                      <label class="form-check-label" for="aiFrequency1">Nie</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiFrequency" id="aiFrequency2" value="rarely" />
+                      <label class="form-check-label" for="aiFrequency2">Selten (weniger als einmal im Monat)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiFrequency" id="aiFrequency3" value="sometimes" />
+                      <label class="form-check-label" for="aiFrequency3">Manchmal (einmal pro Monat)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiFrequency" id="aiFrequency4" value="often" />
+                      <label class="form-check-label" for="aiFrequency4">Häufig (einmal pro Woche)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiFrequency" id="aiFrequency5" value="very_often" />
+                      <label class="form-check-label" for="aiFrequency5">Sehr häufig (mehrmals pro Woche)</label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle eine Option.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">
+                    <span class="question-number">3</span>Hast du bereits KI-basierte Gesundheitsberatungen genutzt?
+                  </label>
+                  <div class="radio-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiHealthUsage" id="aiHealthUsage1" value="regularly" required />
+                      <label class="form-check-label" for="aiHealthUsage1">Ja, regelmäßig</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiHealthUsage" id="aiHealthUsage2" value="occasionally" />
+                      <label class="form-check-label" for="aiHealthUsage2">Ja, manchmal</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiHealthUsage" id="aiHealthUsage3" value="heard_of" />
+                      <label class="form-check-label" for="aiHealthUsage3">Nein, aber ich habe davon gehört</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiHealthUsage" id="aiHealthUsage4" value="never" />
+                      <label class="form-check-label" for="aiHealthUsage4">Nein, noch nie</label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle eine Option.
+                  </div>
+                </div>
+
+              <div class="form-group">
+                <label for="aiHealthUsageDetails" class="form-label">
+                  <span class="question-number">4</span>Wenn du bereits KI-basierte Gesundheitsberatungen genutzt hast, welche waren das?
+                </label>
+                <textarea class="form-control" id="aiHealthUsageDetails" name="aiHealthUsageDetails" rows="3" maxlength="500" placeholder="Deine Antwort hier..."></textarea>
+                <div class="form-text text-end"><span id="charCount">0</span>/500 Zeichen</div>
+              </div>
+              </fieldset>
+            </div>
+          </div>
+
+          
+
+          <!-- 3. Trust in AI -->
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <fieldset>
+                <legend class="h5">3. Vertrauen in KI allgemein</legend>
+                <p class="text-muted">
+                  Bewerte die folgenden Aussagen von 1 (überhaupt nicht) bis 7 (vollständig).
+                </p>
+
+                <div class="form-group">
+                  <label for="generalTrust" class="form-label">
+                    <span class="question-number">1</span>Stimmst du der folgenden Aussage zu?<br>
+                    <i>Ich vertraue KI-gestützten Systemen.</i>
+                  </label>
+                  <div class="row align-items-center gx-2 mb-2">
+                    <div class="col-auto text-center">
+                      <small class="d-block">1</small>
+                      <small class="d-block text-muted">stimme gar nicht zu</small>
+                    </div>
+                    <div class="col">
+                      <input type="range" class="form-range" id="generalTrust" name="generalTrust" min="1" max="7" value="4" required />
+                    </div>
+                    <div class="col-auto text-center">
+                      <small class="d-block">7</small>
+                      <small class="d-block text-muted">stimme voll zu</small>
+                    </div>
+                    <div class="col-auto">
+                      <span class="value-display">4</span>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle einen Wert.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="aiAccuracy" class="form-label">
+                    <span class="question-number">2</span>Stimmst du der folgenden Aussage zu?<br>
+                    <i>KI kann präzise Antworten geben.</i>
+                  </label>
+                  <div class="row align-items-center gx-2 mb-2">
+                    <div class="col-auto text-center">
+                      <small class="d-block">1</small>
+                      <small class="d-block text-muted">stimme gar nicht zu</small>
+                    </div>
+                    <div class="col">
+                      <input type="range" class="form-range" id="aiAccuracy" name="aiAccuracy" min="1" max="7" value="4" required />
+                    </div>
+                    <div class="col-auto text-center">
+                      <small class="d-block">7</small>
+                      <small class="d-block text-muted">stimme voll zu</small>
+                    </div>
+                    <div class="col-auto">
+                      <span class="value-display">4</span>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle einen Wert.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">
+                    <span class="question-number">3</span>Was ist vertrauenswürdiger?
+                  </label>
+                  <div class="radio-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiVsHuman" id="aiVsHuman1" value="ai_more_trustworthy" required />
+                      <label class="form-check-label" for="aiVsHuman1">KI ist vertrauenswürdiger</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiVsHuman" id="aiVsHuman2" value="human_more_trustworthy" />
+                      <label class="form-check-label" for="aiVsHuman2">Menschen sind vertrauenswürdiger</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiVsHuman" id="aiVsHuman3" value="equal" />
+                      <label class="form-check-label" for="aiVsHuman3">Gleichwertig vertrauenswürdig</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="aiVsHuman" id="aiVsHuman4" value="no_answer" />
+                      <label class="form-check-label" for="aiVsHuman4">Keine Angabe</label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle eine Option.
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- 4. Health Literacy -->
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <fieldset>
+                <legend class="h5">4. Gesundheitskompetenz & Sensibilität</legend>
+                <p class="text-muted">
+                  Deine Einstellungen zum Umgang mit medizinischen Informationen.
+                </p>
+
+                <div class="form-group">
+                  <label class="form-label">
+                    <span class="question-number">1</span>Wie oft suchst du online nach medizinischen Informationen?
+                  </label>
+                  <div class="radio-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="onlineSearchFrequency" id="onlineSearchFrequency1" value="never" required />
+                      <label class="form-check-label" for="onlineSearchFrequency1">Nie</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="onlineSearchFrequency" id="onlineSearchFrequency2" value="rarely" />
+                      <label class="form-check-label" for="onlineSearchFrequency2">Selten (1x pro Monat)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="onlineSearchFrequency" id="onlineSearchFrequency3" value="occasionally" />
+                      <label class="form-check-label" for="onlineSearchFrequency3">Manchmal (mehrmals pro Monat)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="onlineSearchFrequency" id="onlineSearchFrequency4" value="often" />
+                      <label class="form-check-label" for="onlineSearchFrequency4">Häufig (einmal pro Woche)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="onlineSearchFrequency" id="onlineSearchFrequency5" value="very_often" />
+                      <label class="form-check-label" for="onlineSearchFrequency5">Sehr häufig (mehrmals pro Woche)</label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle eine Option.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="understandingAbility" class="form-label">
+                    <span class="question-number">2</span>Stimmst du der folgenden Aussage zu?<br>
+                    <i>Ich bin in der Lage, medizinische Informationen selbständig zu interpretieren.</i>
+                  </label>
+                  <div class="row align-items-center gx-2 mb-2">
+                    <div class="col-auto text-center">
+                      <small class="d-block">1</small>
+                      <small class="d-block text-muted">stimme gar nicht zu</small>
+                    </div>
+                    <div class="col">
+                      <input type="range" class="form-range" id="understandingAbility" name="understandingAbility" min="1" max="7" value="4" required />
+                    </div>
+                    <div class="col-auto text-center">
+                      <small class="d-block">7</small>
+                      <small class="d-block text-muted">stimme voll zu</small>
+                    </div>
+                    <div class="col-auto">
+                      <span class="value-display">4</span>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle einen Wert.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">
+                    <span class="question-number">3</span>Wem vertraust du bei medizinischen Informationen? (Mehrfachauswahl möglich)
+                  </label>
+                  <div class="checkbox-group" id="trustSourcesGroup">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="trustSources" id="trustSources1" value="doctors" />
+                      <label class="form-check-label" for="trustSources1">Ärzten</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="trustSources" id="trustSources2" value="health_organizations" />
+                      <label class="form-check-label" for="trustSources2">Gesundheitsorganisationen (z. B. WHO, RKI)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="trustSources" id="trustSources3" value="ai_tools" />
+                      <label class="form-check-label" for="trustSources3">KI-gestützte Diagnosetools</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="trustSources" id="trustSources4" value="online_forums" />
+                      <label class="form-check-label" for="trustSources4">Online-Foren & Communities</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="trustSources" id="trustSources5" value="family_friends" />
+                      <label class="form-check-label" for="trustSources5">Freunde & Familie</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="trustSources" id="trustSources6" value="medical_journals" />
+                      <label class="form-check-label" for="trustSources6">Medizinische Fachzeitschriften</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input no-answer-option" type="checkbox" name="trustSources" id="trustSources7" value="no_answer" />
+                      <label class="form-check-label" for="trustSources7">Keine Angabe</label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback" id="trustSourcesFeedback">
+                    Bitte wähle mindestens eine Option aus.
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- 5. Expectations -->
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <fieldset>
+                <legend class="h5">5. Erwartung an die KI-Antworten</legend>
+                <p class="text-muted">
+                  Teile uns deine Erwartungen an KI-gestützte medizinische Antworten mit.
+                </p>
+
+                <div class="form-group">
+                  <label class="form-label">
+                    <span class="question-number">1</span>Was erwartest du dir von einer KI-Antwort? (Mehrfachauswahl möglich)
+                  </label>
+                  <div class="checkbox-group" id="responsePreferencesGroup">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="responsePreferences" id="responsePreferences1" value="brief" />
+                      <label class="form-check-label" for="responsePreferences1">Kurz und direkt</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="responsePreferences" id="responsePreferences2" value="detailed" />
+                      <label class="form-check-label" for="responsePreferences2">Lang und umfassend</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="responsePreferences" id="responsePreferences3" value="simple_language" />
+                      <label class="form-check-label" for="responsePreferences3">In einfacher Sprache</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="responsePreferences" id="responsePreferences4" value="scientific_evidence" />
+                      <label class="form-check-label" for="responsePreferences4">In Fachsprache</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input no-answer-option" type="checkbox" name="responsePreferences" id="responsePreferences5" value="no_answer" />
+                      <label class="form-check-label" for="responsePreferences5">Keine Angabe</label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback" id="responsePreferencesFeedback">
+                    Bitte wähle mindestens eine Option aus.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="speedImportance" class="form-label">
+                    <span class="question-number">2</span>Stimmst du der folgenden Aussage zu?<br>
+                    <i>Eine schnelle Antwort ist mir wichtig.</i>
+                  </label>
+                  <div class="row align-items-center gx-2 mb-2">
+                    <div class="col-auto text-center">
+                      <small class="d-block">1</small>
+                      <small class="d-block text-muted">stimme gar nicht zu</small>
+                    </div>
+                    <div class="col">
+                      <input type="range" class="form-range" id="speedImportance" name="speedImportance" min="1" max="7" value="4" required />
+                    </div>
+                    <div class="col-auto text-center">
+                      <small class="d-block">7</small>
+                      <small class="d-block text-muted">stimme voll zu</small>
+                    </div>
+                    <div class="col-auto">
+                      <span class="value-display">4</span>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle einen Wert.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="acceptSlower" class="form-label">
+                    <span class="question-number">3</span>Stimmst du der folgenden Aussage zu?<br>
+                    <i>Ich würde eine langsamere Antwort akzeptieren, wenn sie genauer wäre.</i>
+                  </label>
+                  <div class="row align-items-center gx-2 mb-2">
+                    <div class="col-auto text-center">
+                      <small class="d-block">1</small>
+                      <small class="d-block text-muted">stimme gar nicht zu</small>
+                    </div>
+                    <div class="col">
+                      <input type="range" class="form-range" id="acceptSlower" name="acceptSlower" min="1" max="7" value="4" required />
+                    </div>
+                    <div class="col-auto text-center">
+                      <small class="d-block">7</small>
+                      <small class="d-block text-muted">stimme voll zu</small>
+                    </div>
+                    <div class="col-auto">
+                      <span class="value-display">4</span>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle einen Wert.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="openExpectations" class="form-label">
+                    <span class="question-number">4</span>Weitere Erwartungen oder Anmerkungen (Optional)
+                  </label>
+                  <textarea class="form-control" id="openExpectations" name="openExpectations" rows="3" maxlength="500" placeholder="Deine Antwort hier..."></textarea>
+                  <div class="form-text text-end"><span id="charCount">0</span>/500 Zeichen</div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- 6. Technische Details -->
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <fieldset>
+                <legend class="h5">6. Technische Details</legend>
+                <p class="text-muted">
+                  Bitte gib an, auf welchem Gerät du an dieser Studie teilnimmst.
+                </p>
+
+                <div class="form-group">
+                  <label class="form-label">
+                    <span class="question-number">1</span>Auf welchem Gerät nimmst du teil?
+                  </label>
+                  <div class="radio-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="deviceType" id="deviceType1" value="smartphone" required />
+                      <label class="form-check-label" for="deviceType1">Smartphone</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="deviceType" id="deviceType2" value="tablet" />
+                      <label class="form-check-label" for="deviceType2">Tablet</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="deviceType" id="deviceType3" value="laptop" />
+                      <label class="form-check-label" for="deviceType3">Laptop</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="deviceType" id="deviceType4" value="desktop" />
+                      <label class="form-check-label" for="deviceType4">PC / Desktop</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="deviceType" id="deviceType5" value="smart_tv" />
+                      <label class="form-check-label" for="deviceType5">Smart TV</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="deviceType" id="deviceType6" value="other" />
+                      <label class="form-check-label" for="deviceType6">Sonstiges</label>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback">
+                    Bitte wähle eine Option aus.
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" id="continue-btn" class="btn btn-primary continue-btn">
+              <span class="spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+              <span class="button-text">Fortfahren</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer-component progress="30"></footer-component>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script type="module" src="/js/pre-study.js"></script>
+</body>
+</html>

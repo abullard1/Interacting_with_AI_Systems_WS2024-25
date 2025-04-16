@@ -1,0 +1,36 @@
+.alert-warning {
+  border-left: 4px solid #ffc107;
+}
+
+
+.restart-btn {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.restart-btn:focus {
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.25);
+}
+
+
+.restart-btn:active {
+  transform: scale(0.98);
+}
+
+
+@media (max-width: 768px) {
+  .alert-warning {
+    padding: 1rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .custom-jumbotron {
+    padding: 1rem !important;
+  }
+} 

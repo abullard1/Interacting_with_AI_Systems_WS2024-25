@@ -1,0 +1,11 @@
+{
+  "title": "Behandlungsmöglichkeiten von Asthma",
+  "description": "Bei einem Arztbesuch wurde bei dir leichtes Asthma diagnostiziert. Jetzt möchtest du dich besser informieren und wissen, welche Behandlungsmöglichkeiten es gibt.",
+  "task": "Suche gezielt nach Informationen, indem du eine Frage wie **\"Was sind die Behandlungsmöglichkeiten bei leichtem Asthma?\"** eingibst.",
+  "question": "Was sind die Behandlungsmöglichkeiten bei leichtem Asthma?",
+  "welcome_message": "Hallo! Ich bin hier, um deine Fragen zu medizinischen Themen zu beantworten. Wie kann ich Dir heute helfen?",
+  "condition": {
+    "latency": "slow",
+    "complexity": "hard"
+  }
+}

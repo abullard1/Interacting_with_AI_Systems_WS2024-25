@@ -1,0 +1,2 @@
+participant_id,studyStatus,lastActiveAt,gradio_study_completion_timestamp,consentTimestamp,deviceInfo,consentGiven,lastStage,completionTimestamp,studyToken,createdAt,screenResolution
+93a61020-2b0e-41d0-b9bd-5d88377542cd,completed,2025-04-02 21:21:08.651000+00:00,2025-04-02T21:21:08.754295+00:00,2025-04-02 20:59:43.765000+00:00,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Safari/605.1.15",True,finish,2025-04-02 21:21:08.651000+00:00,93a61020-2b0e-41d0-b9bd-5d88377542cd,2025-04-02 20:59:23.819000+00:00,1512x982

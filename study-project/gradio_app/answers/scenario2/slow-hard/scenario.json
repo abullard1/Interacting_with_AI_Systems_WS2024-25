@@ -1,0 +1,11 @@
+{
+  "title": "Präventive Gesundheit",
+  "description": "Du möchtest etwas für deine Gesundheit tun und dich besonders in der Erkältungssaison besser schützen. Du fragst dich, wie man das Immunsystem am besten stärken kann.",
+  "task": "Gib eine Suchanfrage wie **\"Welche Möglichkeiten gibt es, das Immunsystem zu stärken?\"** ein und recherchiere geeignete Maßnahmen.",
+  "question": "Welche Möglichkeiten gibt es, das Immunsystem zu stärken?",
+  "welcome_message": "Hallo! Ich bin hier, um deine Fragen zu medizinischen Themen zu beantworten. Wie kann ich Dir heute helfen?",
+  "condition": {
+    "latency": "slow",
+    "complexity": "hard"
+  }
+}

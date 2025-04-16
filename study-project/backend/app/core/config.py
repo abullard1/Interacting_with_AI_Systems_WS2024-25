@@ -44,7 +44,6 @@ class Settings(BaseSettings):
 
     @property
     def email_config_complete(self) -> bool:
-        """Verify if all necessary Mailgun settings are provided."""
         return bool(self.MAILGUN_API_KEY and self.MAILGUN_DOMAIN and self.RECIPIENT_EMAIL)
 
     class Config:
@@ -54,7 +53,6 @@ class Settings(BaseSettings):
 _settings = None
 
 def get_settings() -> Settings:
-    """Retrieve the application settings instance."""
     global _settings
     if _settings is None:
         _settings = Settings()

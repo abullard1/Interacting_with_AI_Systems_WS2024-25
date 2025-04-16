@@ -21,7 +21,6 @@ class BugReport(BaseModel):
 
 @router.post("/submit-study")
 async def submit_study(request: Request):
-    """Store study data in Firebase."""
     user_token = request.cookies.get("study_token")
     if not user_token:
         logger.error("[DEBUG] Missing study token in request cookies")
@@ -40,23 +39,19 @@ async def submit_study(request: Request):
         logger.info(f"[DEBUG] Successfully completed store_study_data for user {user_token}")
         return {"status": "success", "message": "Study data submitted successfully"}
     except ValueError as ve:
-        # Handle specific case of missing feedback directory
         logger.error(f"[Submit Study] Value Error: {str(ve)}")
         
-        # Try to release locks even if storing data fails
         try:
             logger.info(f"[DEBUG] Attempting direct lock release after store_study_data failure")
             await release_user_locks(user_token)
             logger.info(f"[Submit Study] Released locks for user {user_token} despite data storage error")
             
-            # Return success if it's only a feedback directory issue but locks were released
             if "feedback directory" in str(ve).lower():
                 logger.info(f"[Submit Study] Ignoring feedback directory error and continuing")
                 return {"status": "partial_success", "message": "Study completed but feedback data not stored"}
         except Exception as lock_error:
             logger.error(f"[Submit Study] Error releasing locks: {str(lock_error)}")
             
-        # Re-raise as HTTP exception
         raise HTTPException(status_code=500, detail=f"Error processing feedback data: {str(ve)}")
     except json.JSONDecodeError as je:
         # Handle JSON parsing errors specifically
@@ -85,7 +80,6 @@ async def submit_study(request: Request):
         except Exception as lock_error:
             logger.error(f"[Submit Study] Error releasing locks: {str(lock_error)}")
             
-        # Provide more detailed error message
         error_detail = "Internal server error while storing study data"
         if locks_released:
             error_detail += " (locks were successfully released)"
@@ -96,12 +90,10 @@ async def submit_study(request: Request):
 
 @router.get("/get-study-token")
 async def get_study_token(request: Request):
-    """Get study token from cookies."""
     return {"study_token": request.cookies.get("study_token")}
 
 @router.post("/report-bug")
 async def report_bug(report: BugReport):
-    """Handle bug reports and send email notification."""
     try:
         email_subject = f"Bug Report from {report.page}"
         email_body = f"""

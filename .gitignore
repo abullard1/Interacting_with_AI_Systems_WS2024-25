@@ -52,3 +52,9 @@ firebase_adminsdk_key.json
 # Ignore pycache
 __pycache__/
 
+# Ignore calculate_methods_values.py
+calculate_methods_values.py
+
+# Ignore calculate_paper_metrics.py
+calculate_paper_metrics.py
+

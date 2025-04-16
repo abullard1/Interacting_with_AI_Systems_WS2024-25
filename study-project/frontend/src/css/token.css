@@ -1,0 +1,22 @@
+.token-box {
+  font-family: monospace;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+}
+
+
+.token-box:focus {
+  box-shadow: none;
+  border-color: #dee2e6;
+  background-color: #ffffff;
+}
+
+.token-container {
+  margin: 30px auto;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ 

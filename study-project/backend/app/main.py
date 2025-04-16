@@ -9,11 +9,9 @@ from app.core.config import get_settings
 from app.core.middleware import SecurityHeadersMiddleware, SessionTrackingMiddleware
 from app.routers import api, pages
 
-# Setup logging and settings
 logging.basicConfig(level=logging.INFO)
 settings = get_settings()
 
-# Initialize Firebase
 firebase_admin.initialize_app(credentials.Certificate(settings.FIREBASE_CREDENTIALS_PATH))
 
 # Initialize FastAPI

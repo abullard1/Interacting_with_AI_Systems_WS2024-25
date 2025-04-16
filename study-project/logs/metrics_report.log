@@ -1,0 +1,119 @@
+2025-04-16 14:00:01,489 - INFO - Loading environment variables from /home/study-project/backend/.env
+2025-04-16 14:00:04,062 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+[selection_algorithm.py] Initialized with 40 users and 16 scenario-condition completions
+[selection_algorithm.py] TaskDistributor initialized
+[scenario.py] Found 4 scenario directories
+[scenario.py] ScenarioManager initialized with 4 scenarios
+[metrics_visualizer.py] MetricsVisualizer initialized
+[metrics_reporter.py] MetricsReporter initialized
+2025-04-16 14:00:06,105 - INFO - Starting metrics report generation and sending
+2025-04-16 14:00:06,105 - INFO - Metrics visualizer initialized successfully
+2025-04-16 14:00:06,105 - INFO - Images will be cached in: /home/study-project/logs/metrics_images
+[metrics_reporter.py] Generated metrics report at 2025-04-16 14:00:06
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Created 0 visualization charts
+[metrics_reporter.py] Email report sent successfully with visualizations
+2025-04-16 14:00:13,649 - INFO - Metrics report sent successfully with visualizations
+2025-04-16 16:00:01,677 - INFO - Loading environment variables from /home/study-project/backend/.env
+2025-04-16 16:00:04,283 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+[selection_algorithm.py] Initialized with 40 users and 16 scenario-condition completions
+[selection_algorithm.py] TaskDistributor initialized
+[scenario.py] Found 4 scenario directories
+[scenario.py] ScenarioManager initialized with 4 scenarios
+[metrics_visualizer.py] MetricsVisualizer initialized
+[metrics_reporter.py] MetricsReporter initialized
+2025-04-16 16:00:06,822 - INFO - Starting metrics report generation and sending
+2025-04-16 16:00:06,822 - INFO - Metrics visualizer initialized successfully
+2025-04-16 16:00:06,822 - INFO - Images will be cached in: /home/study-project/logs/metrics_images
+[metrics_reporter.py] Generated metrics report at 2025-04-16 16:00:06
+[metrics_visualizer.py] Deleted cache file: condition_feedback_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: feedback_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: trust_visualization.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: condition_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: trust_metrics_comparison.png (age: 0 days)
+[metrics_visualizer.py] Cleaned up 5 old cache files
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Created 0 visualization charts
+[metrics_reporter.py] Email report sent successfully with visualizations
+2025-04-16 16:00:14,420 - INFO - Metrics report sent successfully with visualizations
+2025-04-16 18:00:01,771 - INFO - Loading environment variables from /home/study-project/backend/.env
+2025-04-16 18:00:04,542 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+[selection_algorithm.py] Initialized with 40 users and 16 scenario-condition completions
+[selection_algorithm.py] TaskDistributor initialized
+[scenario.py] Found 4 scenario directories
+[scenario.py] ScenarioManager initialized with 4 scenarios
+[metrics_visualizer.py] MetricsVisualizer initialized
+[metrics_reporter.py] MetricsReporter initialized
+2025-04-16 18:00:06,674 - INFO - Starting metrics report generation and sending
+2025-04-16 18:00:06,675 - INFO - Metrics visualizer initialized successfully
+2025-04-16 18:00:06,675 - INFO - Images will be cached in: /home/study-project/logs/metrics_images
+[metrics_reporter.py] Generated metrics report at 2025-04-16 18:00:06
+[metrics_visualizer.py] Deleted cache file: condition_feedback_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: feedback_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: trust_visualization.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: condition_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: trust_metrics_comparison.png (age: 0 days)
+[metrics_visualizer.py] Cleaned up 5 old cache files
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Created 0 visualization charts
+[metrics_reporter.py] Email report sent successfully with visualizations
+2025-04-16 18:00:14,295 - INFO - Metrics report sent successfully with visualizations
+2025-04-16 20:00:01,091 - INFO - Loading environment variables from /home/study-project/backend/.env
+2025-04-16 20:00:03,756 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+[selection_algorithm.py] Initialized with 40 users and 16 scenario-condition completions
+[selection_algorithm.py] TaskDistributor initialized
+[scenario.py] Found 4 scenario directories
+[scenario.py] ScenarioManager initialized with 4 scenarios
+[metrics_visualizer.py] MetricsVisualizer initialized
+[metrics_reporter.py] MetricsReporter initialized
+2025-04-16 20:00:05,917 - INFO - Starting metrics report generation and sending
+2025-04-16 20:00:05,917 - INFO - Metrics visualizer initialized successfully
+2025-04-16 20:00:05,917 - INFO - Images will be cached in: /home/study-project/logs/metrics_images
+[metrics_reporter.py] Generated metrics report at 2025-04-16 20:00:05
+[metrics_visualizer.py] Deleted cache file: condition_feedback_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: feedback_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: trust_visualization.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: condition_chart.png (age: 0 days)
+[metrics_visualizer.py] Deleted cache file: trust_metrics_comparison.png (age: 0 days)
+[metrics_visualizer.py] Cleaned up 5 old cache files
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Error creating visualizations: name 'condition_dist' is not defined
+[metrics_reporter.py] Email report sent successfully with visualizations
+2025-04-16 20:00:07,111 - INFO - Metrics report sent successfully with visualizations
+2025-04-16 22:00:01,640 - INFO - Loading environment variables from /home/study-project/backend/.env
+2025-04-16 22:00:04,163 - INFO - HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+[selection_algorithm.py] Initialized with 40 users and 16 scenario-condition completions
+[selection_algorithm.py] TaskDistributor initialized
+[scenario.py] Found 4 scenario directories
+[scenario.py] ScenarioManager initialized with 4 scenarios
+[metrics_visualizer.py] MetricsVisualizer initialized
+[metrics_reporter.py] MetricsReporter initialized
+2025-04-16 22:00:06,415 - INFO - Starting metrics report generation and sending
+2025-04-16 22:00:06,416 - INFO - Metrics visualizer initialized successfully
+2025-04-16 22:00:06,416 - INFO - Images will be cached in: /home/study-project/logs/metrics_images
+[metrics_reporter.py] Generated metrics report at 2025-04-16 22:00:06
+[metrics_visualizer.py] Failed to upload image. Status code: 400
+[metrics_visualizer.py] Error creating visualizations: name 'condition_dist' is not defined
+[metrics_reporter.py] Email report sent successfully with visualizations
+2025-04-16 22:00:07,866 - INFO - Metrics report sent successfully with visualizations
