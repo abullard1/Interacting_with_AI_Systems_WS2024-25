@@ -22,7 +22,7 @@ The primary goal was to examine the main effects of latency and complexity, as w
 
 **Please Note:** <font color="red">**This repository currently only contains the `backend`, `deployment-modules`, and `firebase-administration-scripts` folders.**</font> The full project materials, including the `frontend` (study UI), `gradio_app` (main latency/complexity study section), and `results` (anonymized data, analysis scripts, figures) directories, are currently undergoing necessary cleanup and sanitization before being added.
 
-**The complete project contents will be uploaded to this repository by April 15th.**
+**The complete project contents will be uploaded to this repository by April 16th.**
 
 ---
 
