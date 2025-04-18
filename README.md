@@ -41,9 +41,9 @@ This repository contains the following main components:
     <td align="center">Pre-Study Questionnaire</td>
   </tr>
   <tr>
-    <td><img src="/home/showcase_images/start_page.png" alt="Start Page" max-height="400px"></td>
-    <td><img src="/home/showcase_images/consent_page.png" alt="Consent Page" max-height="400px"></td>
-    <td><img src="/home/showcase_images/pre-study_page.png" alt="Pre-Study Questionnaire Page" max-height="400px"></td>
+    <td><img src="showcase_images/start_page.png" alt="Start Page" max-height="400px"></td>
+    <td><img src="showcase_images/consent_page.png" alt="Consent Page" max-height="400px"></td>
+    <td><img src="showcase_images/pre-study_page.png" alt="Pre-Study Questionnaire Page" max-height="400px"></td>
   </tr>
   <tr>
     <td align="center">Token Entry</td>
@@ -51,9 +51,9 @@ This repository contains the following main components:
     <td align="center">Main Study Interface</td>
   </tr>
   <tr>
-    <td><img src="/home/showcase_images/token_page.png" alt="Token Entry Page" max-height="400px"></td>
-    <td><img src="/home/showcase_images/explanation_page.png" alt="Explanation Page" max-height="400px"></td>
-    <td><img src="/home/showcase_images/main_page.png" alt="Main Study Page" max-height="400px"></td>
+    <td><img src="showcase_images/token_page.png" alt="Token Entry Page" max-height="400px"></td>
+    <td><img src="showcase_images/explanation_page.png" alt="Explanation Page" max-height="400px"></td>
+    <td><img src="showcase_images/main_page.png" alt="Main Study Page" max-height="400px"></td>
   </tr>
    <tr>
     <td align="center">Main Study (Streaming)</td>
@@ -61,9 +61,9 @@ This repository contains the following main components:
     <td align="center">Post-Study Questionnaire</td>
   </tr>
   <tr>
-    <td><img src="/home/showcase_images/main_page_chatbot_streaming.png" alt="Main Study Page with Streaming Response" max-height="400px"></td>
-    <td><img src="/home/showcase_images/bug_report_modal.png" alt="Bug Report Modal" max-height="400px"></td>
-    <td><img src="/home/showcase_images/post-study_page.png" alt="Post-Study Questionnaire Page" max-height="400px"></td>
+    <td><img src="showcase_images/main_page_chatbot_streaming.png" alt="Main Study Page with Streaming Response" max-height="400px"></td>
+    <td><img src="showcase_images/bug_report_modal.png" alt="Bug Report Modal" max-height="400px"></td>
+    <td><img src="showcase_images/post-study_page.png" alt="Post-Study Questionnaire Page" max-height="400px"></td>
   </tr>
   <tr>
     <td align="center">Study Finish</td>
@@ -71,9 +71,9 @@ This repository contains the following main components:
     <td align="center">Finish (Update Error Handling)</td>
   </tr>
   <tr>
-    <td><img src="/home/showcase_images/study_finish_page.png" alt="Study Finish Page" max-height="400px"></td>
-    <td><img src="/home/showcase_images/study_finish_page_update_matrikelnummer.png" alt="Study Finish Page with Matrikelnummer Update" max-height="400px"></td>
-    <td><img src="/home/showcase_images/study_finish_page_update_matrikelnummer_example_of_errorhandling.png" alt="Study Finish Page Matrikelnummer Update Error Handling" max-height="400px"></td>
+    <td><img src="showcase_images/study_finish_page.png" alt="Study Finish Page" max-height="400px"></td>
+    <td><img src="showcase_images/study_finish_page_update_matrikelnummer.png" alt="Study Finish Page with Matrikelnummer Update" max-height="400px"></td>
+    <td><img src="showcase_images/study_finish_page_update_matrikelnummer_example_of_errorhandling.png" alt="Study Finish Page Matrikelnummer Update Error Handling" max-height="400px"></td>
   </tr>
 </table>
 
