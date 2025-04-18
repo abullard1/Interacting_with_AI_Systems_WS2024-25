@@ -31,6 +31,16 @@ This repository contains the following main components:
 
 ---
 
+## Study Data
+
+The anonymized raw data collected from the study participants can be found in the `study-project/results/data/` directory. Each subdirectory within represents a single participant, identified by a unique ID.
+This data includes:
+*   Responses from the main study interaction (handled by the Gradio app).
+*   Data from the pre-study and post-study questionnaires.
+*   Other technical metrics
+
+---
+
 ## Screenshots
 
 <!-- Using HTML for better control over image size and layout -->
