@@ -33,4 +33,66 @@ This repository contains the following main components:
 
 ## Screenshots
 
-*(Screenshots of the study web application interface will be added here soon.)*
+<!-- Using HTML for better control over image size and layout -->
+<table>
+  <tr>
+    <td align="center">Start Page</td>
+    <td align="center">Consent</td>
+    <td align="center">Pre-Study Questionnaire</td>
+  </tr>
+  <tr>
+    <td><img src="/home/showcase_images/start_page.png" alt="Start Page" max-height="400px"></td>
+    <td><img src="/home/showcase_images/consent_page.png" alt="Consent Page" max-height="400px"></td>
+    <td><img src="/home/showcase_images/pre-study_page.png" alt="Pre-Study Questionnaire Page" max-height="400px"></td>
+  </tr>
+  <tr>
+    <td align="center">Token Entry</td>
+    <td align="center">Explanation</td>
+    <td align="center">Main Study Interface</td>
+  </tr>
+  <tr>
+    <td><img src="/home/showcase_images/token_page.png" alt="Token Entry Page" max-height="400px"></td>
+    <td><img src="/home/showcase_images/explanation_page.png" alt="Explanation Page" max-height="400px"></td>
+    <td><img src="/home/showcase_images/main_page.png" alt="Main Study Page" max-height="400px"></td>
+  </tr>
+   <tr>
+    <td align="center">Main Study (Streaming)</td>
+    <td align="center">Bug Report Modal</td>
+    <td align="center">Post-Study Questionnaire</td>
+  </tr>
+  <tr>
+    <td><img src="/home/showcase_images/main_page_chatbot_streaming.png" alt="Main Study Page with Streaming Response" max-height="400px"></td>
+    <td><img src="/home/showcase_images/bug_report_modal.png" alt="Bug Report Modal" max-height="400px"></td>
+    <td><img src="/home/showcase_images/post-study_page.png" alt="Post-Study Questionnaire Page" max-height="400px"></td>
+  </tr>
+  <tr>
+    <td align="center">Study Finish</td>
+    <td align="center">Finish (Update Matrikelnummer)</td>
+    <td align="center">Finish (Update Error Handling)</td>
+  </tr>
+  <tr>
+    <td><img src="/home/showcase_images/study_finish_page.png" alt="Study Finish Page" max-height="400px"></td>
+    <td><img src="/home/showcase_images/study_finish_page_update_matrikelnummer.png" alt="Study Finish Page with Matrikelnummer Update" max-height="400px"></td>
+    <td><img src="/home/showcase_images/study_finish_page_update_matrikelnummer_example_of_errorhandling.png" alt="Study Finish Page Matrikelnummer Update Error Handling" max-height="400px"></td>
+  </tr>
+</table>
+
+---
+
+## Setup & Configuration
+
+To run the project locally, you need to configure the environment variables. You need to create the following files manually:
+
+1.  **Backend `.env` file:** Create a file named `.env` inside the `study-project/backend/` directory with the following variables:
+    ```
+    FIREBASE_CREDENTIALS_PATH=/path/to/your/firebase_adminsdk_key.json
+    STATIC_FILES_DIR=/path/to/study-project/frontend/dist # Adjust if needed
+    MAILGUN_API_KEY=<your_mailgun_api_key>
+    MAILGUN_DOMAIN=<your_mailgun_domain>
+    RECIPIENT_EMAIL=<your_email_for_bug_reports>
+    IMGBB_API_KEY=<your_imgbb_api_key>
+    ```
+
+2.  **Firebase Admin SDK Key:** Place your Firebase service account key file (e.g., `firebase_adminsdk_key.json`) in the location specified by `FIREBASE_CREDENTIALS_PATH` in the backend `.env` file.
+
+Replace the placeholder values (e.g., `<your_mailgun_api_key>`) with your actual keys and paths.
