@@ -12,7 +12,7 @@ GitHub Repository for Submission for the University course "Interacting with AI 
 
 This repository accompanies an experimental study investigating how response latency (Fast vs. Slow) and response complexity (Easy vs. Hard) influence user trust in AI-generated health advice.
 
-The study utilized a 2x2 within-subjects design implemented via a custom web application. Participants (N=39) interacted with a simulated AI across four health scenarios, rating the perceived trustworthiness and quality of the responses under different experimental conditions.
+The study utilized a 2x2 within-subjects design implemented via a custom web application ([unistudy.tech](https://unistudy.tech)). Participants (N=39) interacted with a simulated AI across four health scenarios, rating the perceived trustworthiness and quality of the responses under different experimental conditions.
 
 The primary goal was to examine the main effects of latency and complexity, as well as their interaction effect, on perceived quality perception focusing on trustworthiness along with other metrics.
 
