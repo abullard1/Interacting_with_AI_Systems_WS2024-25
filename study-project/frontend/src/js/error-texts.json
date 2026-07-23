@@ -1,0 +1,36 @@
+{
+  "error_texts": {
+    "general": {
+      "no_user_found": "No authenticated user found. Please try clearing your browser cache and cookies and return to the start page.",
+      "no_study_token": "No study token found. Please try clearing your browser cache and cookies and return to the start page."
+    },
+    "general_error": "An error occurred. Please try clearing your browser cache and cookies and try again.",
+    "firebase_errors": {
+      "firestore_instance_error": "An error occured during the initialization of the Firebase Firestore Instance/App. Please try clearing your browser cache and cookies and return to the start page.",
+      "firebase_auth_no_user_error": "No authenticated user found. Please try clearing your browser cache and cookies and return to the start page.",
+      "firebase_auth_sign_in_error": "An error occurred during the anonymous sign in. Please try clearing your browser cache and cookies and return to the start page.",
+      "firestore_user_doc_ref_error": "An error occured during the initialization of the Firebase Firestore User Document Reference. Please try clearing your browser cache and cookies and return to the start page.",
+      "firestore_user_doc_snap_error": "An error occured during the initialization of the Firebase Firestore User Document Snapshot. Please try clearing your browser cache and cookies and return to the start page.",
+      "firestore_user_doc_update_error": "An error occured when trying to update the anonymous user document. Please try clearing your browser cache and cookies and return to the start page.",
+      "firestore_write_error": "An error occurred while saving your data. Please try again or contact support if the issue persists."
+    },
+    "introduction": {
+      "missing_study_token_error": "No study token found in cookies. Please try clearing your browser cache and cookies and return to the start page."
+    },
+    "consent": {
+      "consent_required": "Please agree to the consent statement before continuing."
+    },
+    "pre_study": {
+      "form_validation_error": "Please complete all required fields before continuing.",
+      "data_save_error": "An error occurred while saving your responses. Please try again."
+    },
+    "post_study": {
+      "form_validation_error": "Please complete all required fields before continuing.",
+      "data_save_error": "An error occurred while saving your responses. Please try again."
+    },
+    "study": {
+      "gradio_error": "An error occured during the initialization of the Gradio application. Please try clearing your browser cache and cookies and reload the page.",
+      "icon_button_wrapper_error": "An error occured when trying to remove the chats icon button wrapper. Do not click the clear button in the chat interface."
+    }
+  }
+}

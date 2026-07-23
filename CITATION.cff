@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying data, please cite it as below."
+title: "Study Platform and Anonymized Data for Interacting with AI Systems WS2024-25"
+abstract: "Web platform and anonymized participant data for the study on the effects of response latency, response complexity, and their interaction on the perceived quality of AI-generated health advice."
+authors:
+  - family-names: Bullard
+    given-names: Samuel
+  - family-names: Manzenberger
+    given-names: Simon
+date-released: 2025-04-21
+license: MIT
+url: "https://github.com/abullard1/Interacting_with_AI_Systems_WS2024-25"
+repository-code: "https://github.com/abullard1/Interacting_with_AI_Systems_WS2024-25"
+keywords:
+  - human-AI interaction
+  - health advice
+  - response latency
+  - user study
+  - University of Regensburg

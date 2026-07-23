@@ -1,0 +1,11 @@
+{
+  "title": "Medizinische Risiken von Schmerzmittel",
+  "description": "Du hast in letzter Zeit häufiger Schmerzmittel eingenommen und fragst dich, ob dies langfristig gesundheitliche Risiken mit sich bringen könnte.",
+  "task": "Stelle eine Suchanfrage wie **\"Welche Risiken gibt es bei der regelmäßigen Einnahme von Schmerzmitteln?\"** und finde Antworten auf deine Frage.",
+  "question": "Welche Risiken gibt es bei der regelmäßigen Einnahme von Schmerzmitteln?",
+  "welcome_message": "Hallo! Ich bin hier, um deine Fragen zu medizinischen Themen zu beantworten. Wie kann ich Dir heute helfen?",
+  "condition": {
+    "latency": "fast",
+    "complexity": "easy"
+  }
+}

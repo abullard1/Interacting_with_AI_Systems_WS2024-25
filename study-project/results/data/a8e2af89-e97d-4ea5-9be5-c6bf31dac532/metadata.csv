@@ -1,0 +1,2 @@
+participant_id,studyStatus,lastActiveAt,gradio_study_completion_timestamp,consentTimestamp,device_class,os_family,browser_family,consentGiven,lastStage,completionTimestamp,createdAt,screenResolution
+a8e2af89-e97d-4ea5-9be5-c6bf31dac532,completed,2025-03-30 21:08:41.316000+00:00,2025-03-30T21:08:41.418317+00:00,2025-03-30 20:45:01.940000+00:00,desktop,macOS,Safari,True,finish,2025-03-30 21:08:41.316000+00:00,2025-03-30 20:44:49.381000+00:00,1512x865

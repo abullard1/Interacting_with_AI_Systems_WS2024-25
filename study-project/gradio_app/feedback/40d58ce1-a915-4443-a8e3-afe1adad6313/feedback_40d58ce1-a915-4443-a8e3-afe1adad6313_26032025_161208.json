@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-03-26T16:12:08.294961",
+  "scenario_id": "scenario2",
+  "condition": "slow-easy",
+  "ratings": {
+    "Wahrgenommene Genauigkeit": 5,
+    "Wahrgenommene Vollst\u00e4ndigkeit": 1,
+    "Wahrgenommene N\u00fctzlichkeit": 2,
+    "Verst\u00e4ndlichkeit": 6,
+    "Vertrauen in die Antwort": 2
+  },
+  "tokens_per_second": 23.19795092063794,
+  "response_delay_seconds": 5.7679448975162675
+}

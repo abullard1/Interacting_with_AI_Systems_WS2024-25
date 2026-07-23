@@ -1,0 +1,57 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore build output directories
+dist/
+build/
+
+# Ignore .env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore VSCode specific files
+.vscode/
+.history/
+
+# Ignore Bootstrap specific files
+bootstrap/
+bootstrap.min.css
+bootstrap.min.js
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore FastAPI specific files
+__pycache__/
+
+# Ignore nodejs specific files
+package-lock.json
+yarn.lock
+
+# Ignore venvs
+venv/
+
+# Ignore serviceAccountKey.json
+firebase_adminsdk_key.json
+
+# Ignore the .cursor folder
+.cursor/
+
+# Ignore pycache
+__pycache__/
+
+# Ignore calculate_methods_values.py
+calculate_methods_values.py
+
+# Ignore calculate_paper_metrics.py
+calculate_paper_metrics.py
+

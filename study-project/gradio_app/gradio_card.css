@@ -1,0 +1,319 @@
+gradio-app {
+  width: 100% !important;
+  min-width: 100% !important;
+  display: block !important;
+}
+
+gradio-app .svelte-1nguped {
+  background-color: transparent !important;
+}
+
+gradio-app .svelte-633qhp {
+  background-color: transparent !important;
+}
+
+.card {
+  flex-grow: 1 !important;
+  padding: 15px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  background-color: rgb(255, 255, 255) !important;
+  margin: 15px auto !important;
+}
+
+#centered-ui {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+}
+
+#task-title {
+  font-weight: bold !important;
+  font-size: 1.5rem !important;
+  color: #333 !important;
+  text-align: center !important;
+  margin-bottom: 16px !important;
+}
+
+#task-description {
+  font-size: 1rem !important;
+  color: #333333 !important;
+  text-align: center !important;
+  margin-bottom: 16px !important;
+  user-select: none !important;
+}
+
+#feedback-submit-btn {
+  margin-top: 15px !important;
+  margin-bottom: 20px !important;
+  border-radius: 0.375rem !important;
+}
+
+#next-scenario-btn {
+  margin-top: 10px !important;
+  border-radius: 0.375rem !important;
+}
+
+.markdown-instructions {
+  text-align: justify !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  line-height: 1.6 !important;
+  padding: 10px !important;
+  box-sizing: border-box !important;
+}
+
+.gr-chatbot { 
+  padding: 20px !important;
+}
+
+.gr-textbox { 
+  padding: 12px !important; 
+  margin-bottom: 10px !important; 
+}
+
+.gr-button { 
+  padding: 10px 20px !important; 
+  margin: 5px !important; 
+  border-radius: 10px !important;
+}
+
+#send-btn {
+  border-radius: 0.375rem !important;
+}
+
+.gr-row { 
+  margin: 10px 0 !important;
+}
+
+#structured-ui {
+  margin: 0 auto !important;
+  padding: 20px !important;
+  min-width: 320px !important;
+}
+
+.auth-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-header {
+  text-align: center;
+}
+
+.auth-description {
+  text-align: center;
+}
+
+.token-error {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.auth-button {
+  width: 100%;
+}
+
+.chat-container {
+  background-color: white !important;
+}
+
+.scenario-header-card {
+  border-left: 4px solid #4a90e2 !important;
+  background: linear-gradient(to right, #f8f9fa, white) !important;
+  transition: all 0.3s ease !important;
+  padding: 15px 20px !important;
+}
+
+.scenario-header-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+.header-title, #scenario-title {
+  text-align: center !important;
+  color: #2c3e50 !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  margin-top: 5px !important;
+}
+
+.header-description, #scenario-description {
+  color: #546e7a !important;
+  text-align: center !important;
+  font-size: 1.1rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 15px !important;
+}
+
+#scenario-task {
+  border-left: 3px solid #4a90e2 !important;
+  padding-left: 12px !important;
+  text-align: center !important;
+  color: #3a4148 !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 1.05rem !important;
+  margin-bottom: 15px !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  cursor: default !important;
+  background-color: rgba(74, 144, 226, 0.03) !important;
+  padding: 8px 12px !important;
+  border-radius: 4px !important;
+  position: relative !important;
+}
+
+#scenario-task:hover::after {
+  content: "🖋️ Bitte abtippen" !important;
+  position: absolute !important;
+  top: -20px !important;
+  right: 10px !important;
+  font-size: 0.75rem !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: white !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
+  opacity: 0.8 !important;
+  pointer-events: none !important;
+}
+
+.header-task, .scenario-task {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  cursor: default !important;
+}
+
+.gradio-warning-message {
+  position: fixed !important;
+  top: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: #ffe066 !important;
+  color: #664d03 !important;
+  padding: 12px 20px !important;
+  border-radius: 6px !important;
+  z-index: 9999 !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) !important;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  max-width: 90% !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.gradio-warning-message {
+  animation: fadeIn 0.3s ease-out !important;
+}
+
+@media (max-width: 768px) {
+  .header-divider {
+    width: 80% !important;
+  }
+  
+  .header-title, #scenario-title {
+    font-size: 1.4rem !important;
+  }
+  
+  .header-description, #scenario-description {
+    font-size: 1rem !important;
+  }
+  
+  .card {
+    padding: 10px !important;
+    margin: 10px auto !important;
+  }
+  
+  #scenario-task, #scenario-description, #scenario-title {
+    font-size: 95% !important;
+  }
+  
+  .feedback-slider {
+    margin-bottom: 15px !important;
+  }
+  
+  #send-btn, #feedback-submit-btn, #next-scenario-btn {
+    min-height: 44px !important;
+  }
+}
+
+#header-description {
+  color: #333333 !important;
+}
+
+.feedback-slider {
+  margin-bottom: 20px !important;
+}
+
+.input-section-row {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100% !important;
+}
+
+.input-container-column {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 10px !important;
+}
+
+.user-input {
+  width: 100% !important;
+  margin-bottom: 10px !important;
+}
+
+.send-button {
+  width: 100% !important;
+  height: 44px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 8px !important;
+    margin: 8px auto !important;
+    border-radius: 10px !important;
+  }
+  
+  #scenario-task, #scenario-description, #scenario-title {
+    font-size: 90% !important;
+  }
+  
+  .gr-chatbot {
+    padding: 12px !important;
+  }
+  
+  .gr-textbox {
+    padding: 8px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .gr-button {
+    padding: 8px 15px !important;
+    margin: 3px !important;
+  }
+  
+  .input-container-column {
+    gap: 8px !important;
+  }
+  
+  .user-input {
+    margin-bottom: 8px !important;
+  }
+}

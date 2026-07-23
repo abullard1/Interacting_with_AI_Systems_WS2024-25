@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Explanation - AI Interaction Study</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/styles/general.css" type="text/css">
+  <link rel="stylesheet" href="/styles/study-explanation.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Components -->
+  <script type="module" src="/js/components/NavbarComponent.js"></script>
+  <script type="module" src="/js/components/FooterComponent.js"></script>
+  <script type="module" src="/js/components/ErrorModal.js"></script>
+  <script type="module" src="/js/components/BugReportModal.js"></script>
+</head>
+<body>
+  <!-- Error Modal Component -->
+  <error-modal></error-modal>
+  
+  <!-- Bug Report Modal Component -->
+  <bug-report-modal></bug-report-modal>
+  
+  <navbar-component></navbar-component>
+
+  <div class="main">
+    <div class="container">
+      <div class="bg-light p-5 rounded custom-jumbotron" id="jumbotron">
+        <h3 class="display-4 text-center">Was erwartet dich im nächsten Schritt?</h3>
+        <p class="lead text-center text-muted mb-4">
+          Hier findest du wichtige Informationen zur Durchführung des Hauptteils der Studie.
+        </p>
+        
+        <div class="alert alert-info mb-4">
+          <strong>Hinweis:</strong> Dein Studien-Token (<span id="token-display" class="text-primary fw-bold"></span>) ist für diese Studie wichtig. 
+          Wenn du während der Studie Probleme meldest, hilft uns dieser Token, deine Daten zuzuordnen.
+          <div class="mt-2">
+            <a href="/token" class="alert-link small"><i class="bi bi-arrow-left-short"></i> Zurück zur Token-Seite</a>
+          </div>
+        </div>
+        
+        <div class="d-flex align-items-center mb-4">
+          <div class="flex-grow-1 border-bottom border-secondary-subtle"></div>
+          <div class="px-3 text-secondary fw-bold">Ablauf der Studie</div>
+          <div class="flex-grow-1 border-bottom border-secondary-subtle"></div>
+        </div>
+        
+        <div class="study-explanation-content">
+          <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-1-circle-fill me-2 text-primary"></i>Vier verschiedene Szenarien</h5>
+              <p class="card-text">
+                Im Hauptteil der Studie wirst du <b>vier verschiedene Szenarien</b> durchlaufen. Jedes Szenario stellt eine andere gesundheitsbezogene Situation dar, in der du eine KI um Rat fragen kannst.
+              </p>
+            </div>
+          </div>
+          
+          <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-2-circle-fill me-2 text-primary"></i>Stellen einer Frage</h5>
+              <p class="card-text">
+                Bei jedem Szenario wirst du gebeten, eine bestimmte Frage zu stellen. Bitte formuliere die Frage so, wie sie im Szenario beschrieben ist, damit die KI richtig antworten kann.
+              </p>
+            </div>
+          </div>
+          
+          <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-3-circle-fill me-2 text-primary"></i>Die KI-Antwort</h5>
+              <p class="card-text">
+                Die KI wird auf deine Frage antworten. Bitte lies die Antwort aufmerksam durch, da du anschließend dazu befragt wirst.
+              </p>
+            </div>
+          </div>
+          
+          <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-4-circle-fill me-2 text-primary"></i>Dein Feedback</h5>
+              <p class="card-text">
+                Nach jeder Antwort wirst du gebeten, ein kurzes Feedback zu geben. Bewerte bitte verschiedene Aspekte der KI-Antwort auf einer Skala von 1 bis 7, bevor du zum nächsten Szenario übergehst.
+              </p>
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-center my-4">
+            <div class="flex-grow-1 border-bottom border-secondary-subtle"></div>
+            <div class="px-3 text-secondary fw-bold">Zusätzliche Informationen</div>
+            <div class="flex-grow-1 border-bottom border-secondary-subtle"></div>
+          </div>
+          
+          <div class="alert alert-info" role="alert">
+            <h5 class="alert-heading d-flex align-items-center"><i class="bi bi-info-circle-fill me-2"></i>Wichtige Hinweise</h5>
+            <p>
+              <strong>Zeit:</strong> Beachte: Du hast maximal <b>60 Minuten</b> Zeit, um den folgenden Abschnitt der Studie abzuschließen. <i>(Du wirst vermutlich nur ca. 10 Minuten benötigen)</i>
+            </p>
+            <p>
+              <strong>Ehrliches Feedback:</strong> Bitte gib ehrliches Feedback über die KI-Antworten. Dein Feedback ist anonym und wird sicher gespeichert und verarbeitet.
+            </p>
+            <p class="mb-0">
+              <strong>Bei Problemen:</strong> Falls technische Schwierigkeiten auftreten, kannst du jederzeit das Bug-Report-Tool in der oberen Navigationsleiste verwenden.
+            </p>
+          </div>
+        </div>
+        
+        <hr class="my-4">
+        
+        <div class="text-center">
+          <button class="btn btn-primary continue-btn mt-4" id="continue-btn" type="button">
+            <span class="spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+            <span class="button-text">Verstanden, weiter zum Hauptteil</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer-component progress="30"></footer-component>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Firebase and Custom Scripts -->
+  <script type="module" src="/js/initialize-firebase.js"></script>
+  <script type="module" src="/js/loading-button-change.js"></script>
+  <script type="module" src="/js/study-explanation.js"></script>
+</body>
+</html> 

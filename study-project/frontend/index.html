@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction - AI Interaction Study</title>
+  <!-- Bootstrap CSS (Bootstrap 5.3) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16.png">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/styles/general.css" type="text/css">
+  <link rel="stylesheet" href="/styles/index.css" type="text/css">
+  <!-- Components -->
+  <script type="module" src="/js/components/NavbarComponent.js"></script>
+  <script type="module" src="/js/components/FooterComponent.js"></script>
+  <script type="module" src="/js/components/ErrorModal.js"></script>
+  <script type="module" src="/js/components/BugReportModal.js"></script>
+</head>
+<body>
+  <!-- Error Modal Component which is the error-modal.html file -->
+  <error-modal></error-modal>
+  
+  <!-- Bug Report Modal Component -->
+  <bug-report-modal></bug-report-modal>
+  
+  <!-- Navbar Component which is the navbar.html file -->
+  <navbar-component></navbar-component>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="container">
+      <div class="bg-light p-5 rounded custom-jumbotron" id="jumbotron">
+        <h3 class="display-4 text-center">AI Interaction Study</h3>
+        <p class="lead text-center text-muted">
+          Vielen Dank, dass du an unserer Studie teilnimmst!
+        </p>
+        <ul class="list-group mt-5 mb-4">
+          <li class="list-group-item">
+            <span>&#8226;</span> In dieser Studie wirst du mit verschiedenen KI-Systemen interagieren und Feedback zu deinen Erfahrungen abgeben.
+          </li>
+          <li class="list-group-item">
+            <span>&#8226;</span> Deine Teilnahme ist freiwillig und du kannst jederzeit abbrechen.
+          </li>
+          <li class="list-group-item">
+            <span>&#8226;</span> Dein Feedback wird es uns erlauben, tiefere Einblicke in die Interaktion zwischen Menschen und KI-Systemen zu gewinnen.
+          </li>
+          <li class="list-group-item">
+            <span>&#8226;</span> Die Teilnahme dauert <b>ca. 20 Minuten</b> und wird mit <b>0.5 Versuchspersonenstunden (VP)</b> vergütet.
+          </li>
+        </ul>
+        <hr class="my-4 mt4" style="margin-top: 2rem !important;" />
+        <div class="alert alert-success" id="bugReportSuccess">
+          <p class="mb-0">Falls dir <strong>Unstimmigkeiten</strong> oder <strong>Bugs</strong> auffallen sollten, kannst du uns diese gerne über den "<strong>Problem melden</strong>" Button oben auf der Seite melden.</p>
+        </div>
+        <div class="alert alert-info" id="deviceRecommendation">
+          <p class="mb-0"><i class="bi bi-info-circle-fill me-2"></i>Für die beste Erfahrung empfehlen wir, diese Studie auf einem Gerät mit größerem Bildschirm durchzuführen, wie z.B. einem <strong>Laptop</strong> oder <strong>PC</strong>.</p>
+        </div>
+        <button class="btn btn-primary continue-btn mt-4" id="continue-btn" type="button">
+          <span class="spinner-border spinner-border-sm d-none" aria-hidden="true"></span>
+          <span class="button-text">Fortfahren</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer-component progress="10"></footer-component>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script type="module" src="/js/initialize-firebase.js"></script>
+  <script type="module" src="/js/introduction.js"></script>
+</body>
+</html>

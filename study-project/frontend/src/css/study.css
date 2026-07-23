@@ -1,0 +1,102 @@
+.gradio-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease-out;
+}
+
+.gradio-loading-content {
+    text-align: center;
+}
+
+.gradio-loading-spinner {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.gradio-loading-text {
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+
+.responsive-gradio-container {
+    width: 100%;
+    min-height: 600px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+gradio-app {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 600px;
+    height: auto !important;
+}
+
+
+.custom-jumbotron {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+@media (max-width: 767.98px) {
+    
+    .custom-jumbotron {
+        padding: 0.5rem !important;
+    }
+    
+    .responsive-gradio-container {
+        padding: 0 !important;
+        min-height: 500px;
+    }
+    
+    gradio-app {
+        min-height: 500px;
+    }
+    
+    
+    gradio-app::part(label) {
+        font-size: 14px !important;
+    }
+    
+    
+    gradio-app::part(button) {
+        min-height: 44px !important;
+        padding: 8px 16px !important;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .container {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    
+    .custom-jumbotron {
+        padding: 0.25rem !important;
+        border-radius: 0.25rem !important;
+    }
+    
+    
+    .responsive-gradio-container {
+        min-height: 450px;
+    }
+    
+    gradio-app {
+        min-height: 450px;
+    }
+}
